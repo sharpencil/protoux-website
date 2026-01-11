@@ -41,7 +41,7 @@ export default function Thanks() {
                                 <span>If aligned, we’ll propose a short introductory conversation</span>
                             </li>
                         </ul>
-                        <p className="text-sm text-secondary mt-2 pl-4 italic">No preparation required on your end.</p>
+                        <p className="text-sm text-secondary mt-6 pl-4 italic">No preparation required on your end.</p>
                     </div>
 
                     <div className="border-t border-white/10 pt-8">
@@ -53,7 +53,7 @@ export default function Thanks() {
                         </div>
                     </div>
 
-                    <p className="text-secondary mt-12 text-center pt-8 border-t border-white/10 border-dashed">
+                    <p className="text-secondary mt-32 text-center pt-8 border-t border-white/10 border-dashed">
                         We appreciate the opportunity to learn about your product.
                     </p>
                 </div>
