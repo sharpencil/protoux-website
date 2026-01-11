@@ -157,6 +157,7 @@ export default function Start() {
                                 <label key={option} className="checkbox-item">
                                     <input
                                         type="checkbox"
+                                        name="situations"
                                         value={option}
                                         checked={formData.situations.includes(option)}
                                         onChange={handleCheckboxChange}
