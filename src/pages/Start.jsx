@@ -228,7 +228,7 @@ export default function Start() {
                     {/* Submit */}
                     <div className="pt-8">
                         <button type="submit" className="btn btn-primary w-full md:w-auto text-lg px-8 py-3">
-                            Start the conversation
+                            Submit
                         </button>
                         <p className="input-hint mt-3 text-center md:text-left">We typically respond within 1–2 business days.</p>
                     </div>
