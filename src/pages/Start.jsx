@@ -33,10 +33,17 @@ export default function Start() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Form Submitted:', formData)
-        // In a real app, send data to backend here.
-        // Redirect to thank you page
-        navigate('/thanks')
+
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => navigate('/thanks'))
+            .catch((error) => alert(error));
     }
 
     return (
@@ -63,7 +70,14 @@ export default function Start() {
                 </div>
 
                 {/* Form */}
-                <form onSubmit={handleSubmit} className="space-y-8">
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    onSubmit={handleSubmit}
+                    className="space-y-8"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
 
                     {/* Basic Info */}
                     <div className="space-y-6">
