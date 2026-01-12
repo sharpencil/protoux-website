@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Living Grid Background */}
             <LivingGrid />
 
-            <div className="container relative z-10">
+            <div className="container relative z-20">
                 <div className="flex flex-col items-center text-center" style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
                     <h1 className="heading-gradient animate-fade-in" style={{ marginBottom: '1.5rem', lineHeight: 1.1, fontSize: '54px' }}>
