@@ -19,7 +19,7 @@ export default function Hero() {
                         Since 2016, Proto UX has helped teams reduce risk, validate decisions, and design scalable systems—adapting continuously as technology and tools have evolved.
                     </p>
 
-                    <div className="flex gap-4 flex-wrap justify-center animate-fade-in delay-300">
+                    <div className="flex gap-4 flex-wrap justify-center animate-fade-in delay-300 relative z-30 pointer-events-auto">
                         <Link to="/start" className="btn btn-primary">
                             Start a conversation
                         </Link>
