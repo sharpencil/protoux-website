@@ -1,5 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO'
+import { Link } from 'react-router-dom'
 import { Check, X, ArrowRight } from 'lucide-react'
 
 export default function Pricing() {
@@ -23,7 +24,7 @@ export default function Pricing() {
                     {/* Project-Based */}
                     <div className="glass-card p-8 md:p-10 flex flex-col h-full">
                         <div>
-                            <h2 className="text-2xl font-bold text-white mb-4">Project-Based Engagements</h2>
+                            <h2 className="text-2xl font-bold text-blue-grey mb-4">Project-Based Engagements</h2>
                             <p className="text-secondary mb-8">
                                 <strong className="text-white">Best for:</strong> Defined initiatives, new product efforts, major redesigns, or validation-heavy phases.
                             </p>
@@ -89,7 +90,7 @@ export default function Pricing() {
                     <div className="glass-card p-8 md:p-10 flex flex-col h-full relative overflow-hidden">
 
                         <div>
-                            <h2 className="text-2xl font-bold text-white mb-4">Fractional Design Partnership</h2>
+                            <h2 className="text-2xl font-bold text-blue-grey mb-4">Fractional Design Partnership</h2>
                             <p className="text-secondary mb-8">
                                 <strong className="text-white">Best for:</strong> Teams that need ongoing senior design leadership without hiring full-time.
                             </p>
@@ -220,9 +221,9 @@ export default function Pricing() {
                     <p className="text-xl text-secondary max-w-2xl mx-auto mb-8">
                         If you’re evaluating a project or considering a longer-term partnership, we’re happy to discuss scope, timing, and fit.
                     </p>
-                    <a href="#contact" className="btn btn-primary inline-flex items-center gap-2">
-                        Schedule a conversation <ArrowRight className="w-5 h-5" />
-                    </a>
+                    <Link to="/start" className="btn btn-primary inline-flex items-center gap-2">
+                        Start a conversation <ArrowRight className="w-5 h-5" />
+                    </Link>
                 </div>
             </div>
         </section>

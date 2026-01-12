@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import {
     Stethoscope,
     Workflow,
@@ -103,10 +104,7 @@ export default function Services() {
 
                 {/* The Process Section - The Logic Engine */}
                 <section className="container mb-32 relative">
-                    <div className="text-center mb-24">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">The Logic Engine</h2>
-                        <p className="text-blue-grey">Our proven methodology for complex systems</p>
-                    </div>
+
 
                     <div className="timeline-container">
                         {/* Continuous Glowing Line */}
@@ -138,10 +136,10 @@ export default function Services() {
                 <section className="container text-center pb-12 pt-24">
                     <div className="max-w-2xl mx-auto">
                         <h2 className="text-4xl font-bold mb-8">Ready to build with rigor?</h2>
-                        <a href="#contact" className="btn inline-flex items-center gap-2 text-lg px-8 py-4"
+                        <Link to="/start" className="btn inline-flex items-center gap-2 text-lg px-8 py-4"
                             style={{ backgroundColor: 'var(--accent)', color: 'white' }}>
                             Start a conversation
-                        </a>
+                        </Link>
                     </div>
                 </section>
             </div>

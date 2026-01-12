@@ -20,7 +20,7 @@ export default function Footer() {
                             <span className="text-xl font-bold tracking-tight text-white">Proto UX</span>
                         </Link>
                         <p className="text-secondary text-base leading-relaxed">
-                            Outcome-driven design for complex products. Fusing human factors with shipped logic.
+                            Outcome-driven design for complex products.
                         </p>
                         <div className="flex flex-col gap-1 text-sm text-muted mt-2">
                             <span>Based in Austin, TX</span>

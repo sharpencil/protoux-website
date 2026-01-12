@@ -36,40 +36,16 @@ export default function LivingGrid() {
 
         setSquares(generatedSquares)
 
-        // --- Spotlight Logic ---
-        const updateMousePosition = (e) => {
-            if (!containerRef.current || !spotlightRef.current) return
-            const rect = containerRef.current.getBoundingClientRect()
-            const x = e.clientX - rect.left
-            const y = e.clientY - rect.top
-
-            const size = 500
-            spotlightRef.current.style.transform = `translate(${x - size / 2}px, ${y - size / 2}px)`
-        }
-
-        window.addEventListener('mousemove', updateMousePosition)
-        return () => window.removeEventListener('mousemove', updateMousePosition)
+        // --- Spotlight Logic Removed ---
+        // const updateMousePosition = (e) => { ... }
+        // window.addEventListener('mousemove', updateMousePosition)
+        // return () => window.removeEventListener('mousemove', updateMousePosition)
     }, [])
 
     return (
         <div ref={containerRef} className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-            {/* Spotlight Orb */}
-            <div
-                ref={spotlightRef}
-                className="absolute rounded-full pointer-events-none"
-                style={{
-                    width: '500px',
-                    height: '500px',
-                    top: 0,
-                    left: 0,
-                    background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%)',
-                    transform: 'translate(-100%, -100%)',
-                    filter: 'blur(40px)',
-                    mixBlendMode: 'screen',
-                    willChange: 'transform',
-                    zIndex: 1
-                }}
-            />
+            {/* Spotlight Orb Removed */}
+
 
             {/* Base Grid Pattern */}
             <div

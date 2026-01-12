@@ -262,8 +262,7 @@ button {
 }
 
 .btn-primary {
-  /* Simple Gradient Only */
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   color: white;
   border: none;
 }

@@ -37,7 +37,7 @@ export default function Navbar() {
             <div className="container" style={{ height: 'var(--header-height)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img src="/protoux-logo.png" alt="Proto UX" style={{ height: '18px', display: 'block' }} />
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 400, borderLeft: '1px solid var(--border)', paddingLeft: '0.75rem', marginTop: '0.1rem' }}>
+                    <span style={{ fontSize: '0.85rem', color: '#94A3B8', fontWeight: 400, borderLeft: '1px solid var(--border)', paddingLeft: '0.75rem', marginTop: '0.1rem' }}>
                         Product Design for Clarity
                     </span>
                 </Link>

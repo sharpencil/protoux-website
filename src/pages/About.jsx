@@ -1,5 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO'
+import { Link } from 'react-router-dom'
 import { Check, ArrowRight } from 'lucide-react'
 
 export default function About() {
@@ -70,7 +71,7 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-8 mb-24">
                     {/* How We Work */}
                     <div className="glass-card p-8 md:p-10 h-full">
-                        <h2 className="text-2xl font-bold text-white mb-6">How We Work</h2>
+                        <h2 className="text-2xl font-bold text-blue-grey mb-6">How We Work</h2>
                         <p className="text-secondary mb-8 leading-relaxed">
                             We partner with teams building complex B2B and enterprise software—where mistakes are expensive and decisions matter. Our approach is human-led and AI-accelerated:
                         </p>
@@ -92,7 +93,7 @@ export default function About() {
 
                     {/* What We Focus On */}
                     <div className="glass-card p-8 md:p-10 h-full">
-                        <h2 className="text-2xl font-bold text-white mb-6">What We Focus On</h2>
+                        <h2 className="text-2xl font-bold text-blue-grey mb-6">What We Focus On</h2>
                         <p className="text-secondary mb-8 leading-relaxed">
                             Proto UX is not a volume design shop. We focus on work where:
                         </p>
@@ -121,9 +122,9 @@ export default function About() {
                     <p className="text-xl text-secondary max-w-2xl mx-auto mb-8">
                         If you’re navigating complexity, uncertainty, or scale, we’re happy to start a conversation.
                     </p>
-                    <a href="#contact" className="btn btn-primary inline-flex items-center gap-2">
+                    <Link to="/start" className="btn btn-primary inline-flex items-center gap-2">
                         Start a conversation <ArrowRight className="w-5 h-5" />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
