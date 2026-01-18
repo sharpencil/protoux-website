@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import JsonLd from './components/analytics/JsonLd'
@@ -17,6 +18,7 @@ import Article from './pages/Article'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app flex flex-col min-h-screen">
         <JsonLd /> {/* Global Structured Data */}
         <Navbar />
