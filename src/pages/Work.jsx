@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check, Shield, Layers, Cpu, Layout, GitBranch } from 'lucide-react'
-import WorkList from '../components/WorkList'
 import TForceLogistics from '../components/case-studies/TForceLogistics'
 import SEO from '../components/SEO'
 

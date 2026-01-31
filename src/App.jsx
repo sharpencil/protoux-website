@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import JsonLd from './components/analytics/JsonLd'
 import Home from './pages/Home'
-import Services from './pages/Services'
+import Capabilities from './pages/Capabilities'
 import Work from './pages/Work'
 import Pricing from './pages/Pricing'
 import TForceLogisticsPage from './pages/TForceLogisticsPage'
@@ -25,7 +25,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/capabilities" element={<Capabilities />} />
             <Route path="/work" element={<Work />} />
             <Route path="/work/tforce-logistics" element={<TForceLogisticsPage />} />
             <Route path="/pricing" element={<Pricing />} />

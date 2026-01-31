@@ -23,8 +23,8 @@ export default function Hero() {
                         <Link to="/start" className="btn btn-primary">
                             Start a conversation
                         </Link>
-                        <Link to="/services" className="btn btn-secondary">
-                            Explore our services <ArrowRight size={16} style={{ marginLeft: 8 }} />
+                        <Link to="/capabilities" className="btn btn-secondary">
+                            Explore our capabilities <ArrowRight size={16} style={{ marginLeft: 8 }} />
                         </Link>
                     </div>
 

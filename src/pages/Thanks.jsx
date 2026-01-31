@@ -47,7 +47,7 @@ export default function Thanks() {
                     <div className="border-t border-white/10 pt-8">
                         <p className="text-white font-medium mb-4">In the meantime, you may want to:</p>
                         <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-                            <Link to="/services" className="text-accent hover:text-white transition-colors">Review our Services</Link>
+                            <Link to="/capabilities" className="text-accent hover:text-white transition-colors">Review our Capabilities</Link>
                             <Link to="/work" className="text-accent hover:text-white transition-colors">Explore Case Studies</Link>
                             <Link to="/pricing" className="text-accent hover:text-white transition-colors">Learn about Pricing & Engagement Models</Link>
                         </div>

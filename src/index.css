@@ -545,6 +545,16 @@ button {
 }
 
 /* Color Utilities */
+/* Color Utilities */
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .text-green-400 {
   color: #4ade80;
 }
