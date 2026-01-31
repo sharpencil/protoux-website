@@ -9,7 +9,7 @@ export default function Insights() {
 
     useEffect(() => {
         // Vite glob import to get raw content
-        const modules = import.meta.glob('../content/insights/*.md', { as: 'raw', eager: true })
+        const modules = import.meta.glob('../content/insights/*.md', { query: '?raw', import: 'default', eager: true })
 
         const loadedArticles = Object.entries(modules).map(([path, content]) => {
             const { metadata } = parseFrontmatter(content)

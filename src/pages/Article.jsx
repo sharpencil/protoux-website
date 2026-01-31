@@ -15,7 +15,7 @@ export default function Article() {
             try {
                 // Vite specific way to dynamic import
                 // We have to iterate glob results to find the one matching slug
-                const modules = import.meta.glob('../content/insights/*.md', { as: 'raw', eager: true })
+                const modules = import.meta.glob('../content/insights/*.md', { query: '?raw', import: 'default', eager: true })
 
                 // Find path ending with slug.md
                 const path = Object.keys(modules).find(p => p.endsWith(`/${slug}.md`))
