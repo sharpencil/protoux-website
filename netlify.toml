@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:static"
+  command = "npx puppeteer browsers install chrome && npm run build:static"
   publish = "dist"
 
 [build.environment]
