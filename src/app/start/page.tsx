@@ -98,9 +98,8 @@ export default function Start() {
                                 <div className="relative">
                                     <select id="model" name="model" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
                                         <option value="" disabled selected>Select an option...</option>
-                                        <option value="audit">Cognitive Audit ($3k)</option>
-                                        <option value="retainer">Product Architecture (Retainer)</option>
-                                        <option value="mvp">MVP Launch ($15k)</option>
+                                        <option value="project">Project-Based Engagement</option>
+                                        <option value="fractional">Fractional Design Partnership</option>
                                         <option value="other">Other / Custom</option>
                                     </select>
                                     <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-authority-navy/50">
