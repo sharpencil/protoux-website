@@ -28,25 +28,27 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <div className="hidden md:flex items-center space-x-8">
-                {navLinks.map((link) => (
-                    <Link
-                        key={link.name}
-                        href={link.href}
-                        className="text-sm font-medium text-authority-navy hover:text-electric-cyan transition-colors"
-                    >
-                        {link.name}
-                    </Link>
-                ))}
-            </div>
+            <div className="flex items-center gap-8">
+                <div className="hidden md:flex items-center space-x-8">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className="text-sm font-medium text-authority-navy hover:text-electric-cyan transition-colors"
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
 
-            <div className="flex items-center">
-                <Link
-                    href="/start"
-                    className="px-6 py-2.5 text-sm font-semibold text-authority-navy bg-electric-cyan rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-0.5 transition-all duration-300"
-                >
-                    Get Started
-                </Link>
+                <div className="flex items-center">
+                    <Link
+                        href="/start"
+                        className="px-6 py-2.5 text-sm font-semibold text-authority-navy bg-electric-cyan rounded-full shadow-lg shadow-electric-cyan/20 hover:shadow-electric-cyan/40 hover:-translate-y-0.5 transition-all duration-300"
+                    >
+                        Get Started
+                    </Link>
+                </div>
             </div>
         </motion.nav>
     );

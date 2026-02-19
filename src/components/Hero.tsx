@@ -8,7 +8,10 @@ import { ArrowRight, ShieldCheck, TrendingUp } from "lucide-react";
 export default function Hero() {
     return (
         <section className="relative w-full min-h-screen flex items-center bg-white overflow-hidden pt-20"> {/* pt-20 to offset fixed navbar */}
-            <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            {/* Background Grid Pattern - Very light, clean blueprint grid */}
+            <div className="absolute inset-0 z-0 opacity-[0.03] bg-[linear-gradient(to_right,#001F3F_1px,transparent_1px),linear-gradient(to_bottom,#001F3F_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+            <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
                 {/* Left Side: Copy */}
                 <motion.div
