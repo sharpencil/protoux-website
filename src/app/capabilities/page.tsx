@@ -71,33 +71,33 @@ export default function Capabilities() {
                         {/* Process Steps */}
                         {[
                             {
-                                title: "Diagnose & Align",
-                                desc: "Clarity precedes execution. We apply rigorous research to align user needs with business goals and organizational constraints. Mapping leverage points and defining what is NOT worth building.",
+                                title: "1. Strategic De-risking",
+                                desc: "Clarity precedes execution. We pressure-test business goals against user needs using AI-driven insights. It's not just about doing research; it's about systematically defining what NOT to build before we spend a single development cycle.",
                                 icon: Activity
                             },
                             {
-                                title: "Intelligence Architecture",
-                                desc: "Designing the 90% below the surface. We architect Context Awareness, Intent Recognition, and Data Schemas. Defining how the product thinks before determining how it looks.",
+                                title: "2. Architecture & Data Strategy",
+                                desc: "Designing the 90% below the surface. We architect how your product organizes and retrieves information (like Context and RAG logic) so the system is optimized for both human intent and AI intelligence.",
                                 icon: BrainCircuit
                             },
                             {
-                                title: "Interaction Protocols",
-                                desc: "Structuring the dialogue. We iteratively design adaptive workflows and error recovery protocols, ensuring the system guides users through ambiguity without friction.",
+                                title: "3. Adaptive Interaction Design",
+                                desc: "Structuring the dialogue. We design flexible workflows that handle unpredictable user paths. Instead of static screens, we build intelligent 'Interface Guards' that guide users through ambiguity gracefully without frustration.",
                                 icon: Layers
                             },
                             {
-                                title: "Code-First Validation",
-                                desc: "We stop simulating. Using AI-native tools, we spin up functional React prototypes to test interaction logic in the native environment, exposing edge cases static tools miss.",
+                                title: "4. Rapid Functional Prototyping",
+                                desc: "We stop simulating. Using modern AI tools, we deploy functional working drafts in hours, not weeks. We test real interactions in the browser, exposing edge cases that static mockups can never surface.",
                                 icon: Code
                             },
                             {
-                                title: "Agentic System Governance",
-                                desc: "Code-backed governance. We build Component Factories and Headless Tokens (tokens.json) that force AI and developers to adhere to the design system automatically.",
+                                title: "5. Systematic Design Governance",
+                                desc: "Code-backed consistency. We build design systems that enforce rules automatically. This ensures that both your human developers and any AI agents adhere to your brand identity perfectly moving forward.",
                                 icon: ShieldCheck
                             },
                             {
-                                title: "Visual Engineering",
-                                desc: "Zero-latency execution. We manipulate production code directly in the browser (Visual Engineering), ensuring physics, spacing, and logic feel native from Day 1.",
+                                title: "6. Native Execution & Polish",
+                                desc: "Zero-friction handoffs. We build directly into production-ready code, ensuring performance, spacing, and application logic feel native and polished from Day 1.",
                                 icon: Cpu
                             }
                         ].map((step, index) => (
