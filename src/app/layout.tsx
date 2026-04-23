@@ -14,8 +14,32 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Proto UX",
-  description: "Advanced UX/UI Design Consultancy",
+  metadataBase: new URL("https://protoux.com"),
+  title: {
+    default: "Proto UX | Advanced UX/UI Design Consultancy",
+    template: "%s | Proto UX",
+  },
+  description: "Advanced UX/UI Design Consultancy specializing in Cognitive Science and System Architecture.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Proto UX",
+    description: "Advanced UX/UI Design Consultancy",
+    url: "https://protoux.com",
+    siteName: "Proto UX",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Proto UX",
+    description: "Advanced UX/UI Design Consultancy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

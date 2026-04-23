@@ -16,7 +16,7 @@ const clients = [
     "CulturSys",
     "WellSmith",
     "Calavista Software",
-    "Evergreeb Beauty College",
+    "Evergreen Beauty College",
     "Infinite Giving",
     "Encino Energy",
     "TriggerPoint Media"
