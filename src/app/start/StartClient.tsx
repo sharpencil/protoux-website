@@ -154,8 +154,8 @@ export default function StartClient() {
                                 <div className="space-y-2">
                                     <label htmlFor="model" className="text-sm font-bold uppercase tracking-wide text-authority-navy/70">Engagement Model</label>
                                     <div className="relative">
-                                        <select id="model" name="model" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
-                                            <option value="" disabled selected>Select an option...</option>
+                                        <select id="model" name="model" defaultValue="" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan outline-none transition-all text-authority-navy appearance-none cursor-pointer">
+                                            <option value="" disabled>Select an option...</option>
                                             <option value="project">Project-Based Engagement</option>
                                             <option value="fractional">Fractional Design Partnership</option>
                                             <option value="other">Other / Custom</option>

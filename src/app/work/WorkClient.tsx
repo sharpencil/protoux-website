@@ -8,6 +8,30 @@ import Link from "next/link";
 export default function WorkClient() {
     const caseStudies = [
         {
+            id: "smartstream",
+            title: "Project Execution Engine.",
+            client: "SmartStream",
+            tags: ["AI-Driven Flow", "Continuous Flow", "Explainable AI"],
+            description:
+                "Translating the AI-Driven Continuous Flow Methodology (AI-CFM) into a high-performance Project Execution Engine. We replaced static backlog boards with a dynamic, real-time pulse timeline forecasting future operations.",
+            metrics: "Zero-Friction Operations. Predictive Shift Modeling.",
+            imageColor: "bg-gradient-to-br from-slate-900 to-authority-navy border-slate-800",
+            layout: "left",
+            slug: "/work/smartstream"
+        },
+        {
+            id: "iodine",
+            title: "Interact Mobile App.",
+            client: "Iodine Software",
+            tags: ["Mobile UX/UI", "Material Design", "Healthcare Informatics"],
+            description:
+                "Modernizing clinical documentation queries. We designed a touch-optimized mobile interface and push system for physicians, transforming clunky desktop EMR widgets into simple, two-minute response loops.",
+            metrics: "Increased Response Rate. Under 2-Minute Actions.",
+            imageColor: "bg-gradient-to-br from-[#112D4E] to-slate-950",
+            layout: "right",
+            slug: "/work/iodine-interact"
+        },
+        {
             id: "tforce",
             title: "Operational Intelligence.",
             client: "TForce Logistics",
@@ -18,6 +42,42 @@ export default function WorkClient() {
             imageColor: "bg-blue-100", // Placeholder for image
             layout: "left",
             slug: "/work/operational-intelligence"
+        },
+        {
+            id: "siemens",
+            title: "Digital Facility Log.",
+            client: "Siemens Building Tech",
+            tags: ["Remote Diagnostics", "Social UI Style", "Touchscreen Design"],
+            description:
+                "Translating physical facility logbooks into a dynamic building operations portal. We designed a touch-first, iPad-proportioned collaboration hub featuring real-time activity streams, QR code asset lookups, and remote acoustic diagnostics.",
+            metrics: "Remote Collaboration. Sound-Based Diagnostics.",
+            imageColor: "bg-gradient-to-br from-[#003C43] to-slate-950",
+            layout: "right",
+            slug: "/work/siemens-dfl"
+        },
+        {
+            id: "evergreen",
+            title: "Student Information System.",
+            client: "Evergreen Beauty College",
+            tags: ["Clock-Hour Tracking", "Regulatory Compliance", "Role Impersonation"],
+            description:
+                "Modernizing educational administration for clock-hour institutions. We re-engineered the student account management workflow, enabling compliance tracking, predictive risk monitoring, and seamless role impersonation to streamline audits.",
+            metrics: "Automated Financial Aid. Instant Clock-Hour Auditing.",
+            imageColor: "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
+            layout: "left",
+            slug: "/work/evergreen-sis"
+        },
+        {
+            id: "siemens-config",
+            title: "Configuration Workspace.",
+            client: "Siemens Config Tool",
+            tags: ["Bulk Configuration", "Standardized UI", "Wizard Workflow"],
+            description:
+                "Simplifying complex gateway commissioning. We re-designed the engineering configuration workspace, replacing technical JSON interfaces with guided setup wizards, persistent validation rules, and bulk deployment frameworks.",
+            metrics: "Zero JSON Errors. 3x Faster Site Commissioning.",
+            imageColor: "bg-gradient-to-br from-[#1F4E5B] to-slate-900",
+            layout: "right",
+            slug: "/work/siemens-config-tool"
         },
     ];
 
@@ -36,10 +96,13 @@ export default function WorkClient() {
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-authority-navy mb-6">
                         Shipped Logic.
                     </h1>
-                    <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-authority-navy/80 font-light max-w-2xl mx-auto leading-relaxed mb-6">
                         Selected case studies in Agentic Design and System Architecture. <br className="hidden md:block" />
                         We don't just visualize; <span className="font-semibold text-authority-navy underline decoration-electric-cyan underline-offset-4">we execute.</span>
                     </p>
+                    <div className="max-w-xl mx-auto p-4 bg-slate-gray rounded-xl border border-slate-200 text-xs font-light text-authority-navy/80 leading-relaxed text-center">
+                        <strong>Confidentiality Notice:</strong> All client deliverables listed below are subject to strict NDAs. Interactive widgets are sanitized, functional wireframe simulations. High-fidelity designs are available for review upon request.
+                    </div>
                 </motion.div>
             </section>
 
@@ -64,9 +127,11 @@ export default function WorkClient() {
                                         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                             <span className="bg-white/90 text-authority-navy px-6 py-2 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Project</span>
                                         </div>
-                                        <div className="absolute inset-0 flex items-center justify-center text-authority-navy/10 font-heading text-6xl font-black uppercase tracking-tighter select-none">
-                                            {study.client.split(' ')[0]}
-                                        </div>
+                                         <div className={`absolute inset-0 flex items-center justify-center font-heading text-6xl font-black uppercase tracking-tighter select-none ${
+                                             study.id === "smartstream" || study.id === "evergreen" || study.id === "siemens" || study.id === "siemens-config" || study.id === "iodine" ? "text-white/10" : "text-authority-navy/10"
+                                         }`}>
+                                             {study.client.split(' ')[0]}
+                                         </div>
                                     </Link>
                                 </div>
 
