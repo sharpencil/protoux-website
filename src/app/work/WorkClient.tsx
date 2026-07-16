@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WorkClient() {
     const caseStudies = [
@@ -16,6 +17,7 @@ export default function WorkClient() {
                 "Translating the AI-Driven Continuous Flow Methodology (AI-CFM) into a high-performance Project Execution Engine. We replaced static backlog boards with a dynamic, real-time pulse timeline forecasting future operations.",
             metrics: "Zero-Friction Operations. Predictive Shift Modeling.",
             imageColor: "bg-gradient-to-br from-slate-900 to-authority-navy border-slate-800",
+            thumbnail: "/images/smartstream.png",
             layout: "left",
             slug: "/work/smartstream"
         },
@@ -28,6 +30,7 @@ export default function WorkClient() {
                 "Modernizing clinical documentation queries. We designed a touch-optimized mobile interface and push system for physicians, transforming clunky desktop EMR widgets into simple, two-minute response loops.",
             metrics: "Increased Response Rate. Under 2-Minute Actions.",
             imageColor: "bg-gradient-to-br from-[#112D4E] to-slate-950",
+            thumbnail: "/images/iodine_interact.png",
             layout: "right",
             slug: "/work/iodine-interact"
         },
@@ -40,6 +43,7 @@ export default function WorkClient() {
                 "Solving the 'Commingled Route Paradox.' We re-architected a legacy Java Swing logistics system into a modern web platform. By moving from flat lists to Nested Logic Visualization, we reduced cognitive load for dispatchers handling thousands of orders.",
             metrics: "Reduced Dispatch Error Rate. 40% Faster Onboarding.",
             imageColor: "bg-blue-100", // Placeholder for image
+            thumbnail: "/images/tforce.png",
             layout: "left",
             slug: "/work/operational-intelligence"
         },
@@ -52,6 +56,7 @@ export default function WorkClient() {
                 "Translating physical facility logbooks into a dynamic building operations portal. We designed a touch-first, iPad-proportioned collaboration hub featuring real-time activity streams, QR code asset lookups, and remote acoustic diagnostics.",
             metrics: "Remote Collaboration. Sound-Based Diagnostics.",
             imageColor: "bg-gradient-to-br from-[#003C43] to-slate-950",
+            thumbnail: "/images/siemens_digitalfacilitylog.png",
             layout: "right",
             slug: "/work/siemens-dfl"
         },
@@ -64,6 +69,7 @@ export default function WorkClient() {
                 "Modernizing educational administration for clock-hour institutions. We re-engineered the student account management workflow, enabling compliance tracking, predictive risk monitoring, and seamless role impersonation to streamline audits.",
             metrics: "Automated Financial Aid. Instant Clock-Hour Auditing.",
             imageColor: "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
+            thumbnail: "/images/ebc.png",
             layout: "left",
             slug: "/work/evergreen-sis"
         },
@@ -76,8 +82,22 @@ export default function WorkClient() {
                 "Simplifying complex gateway commissioning. We re-designed the engineering configuration workspace, replacing technical JSON interfaces with guided setup wizards, persistent validation rules, and bulk deployment frameworks.",
             metrics: "Zero JSON Errors. 3x Faster Site Commissioning.",
             imageColor: "bg-gradient-to-br from-[#1F4E5B] to-slate-900",
+            thumbnail: "/images/simens_configuration.png",
             layout: "right",
             slug: "/work/siemens-config-tool"
+        },
+        {
+            id: "outpatient",
+            title: "Outpatient CDI & HCC Capture.",
+            client: "ChartWise",
+            tags: ["Problem List Review", "HCC Recapture", "RAF Score Modeling"],
+            description:
+                "Optimizing risk-adjustment and chronic disease documentation for Medicare Advantage. We built an integrated pre-visit planner, SNOMED problem list mapper, and live RAF score calculator to streamline clinical documentation improvement.",
+            metrics: "Optimized RAF Accuracy. Reduced Audit Risk.",
+            imageColor: "bg-gradient-to-br from-[#1b1c3a] via-slate-900 to-[#121324] border-indigo-950/40",
+            thumbnail: "/images/iodine_outpatient.png",
+            layout: "left",
+            slug: "/work/outpatient"
         },
     ];
 
@@ -123,15 +143,26 @@ export default function WorkClient() {
                                 {/* Image Side */}
                                 <div className="w-full lg:w-3/5">
                                     <Link href={study.slug || "#"} className={`block aspect-[16/10] rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden relative group cursor-pointer border border-white/50 ${study.imageColor}`}>
-                                        {/* Placeholder Visuals */}
-                                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                        {study.thumbnail ? (
+                                            <Image
+                                                src={study.thumbnail}
+                                                alt={`${study.client} - ${study.title}`}
+                                                fill
+                                                className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                                                sizes="(max-width: 1024px) 100vw, 60vw"
+                                                priority={index < 2}
+                                            />
+                                        ) : (
+                                            <div className={`absolute inset-0 flex items-center justify-center font-heading text-6xl font-black uppercase tracking-tighter select-none ${
+                                                study.id === "smartstream" || study.id === "evergreen" || study.id === "siemens" || study.id === "siemens-config" || study.id === "iodine" || study.id === "outpatient" ? "text-white/10" : "text-authority-navy/10"
+                                            }`}>
+                                                {study.client.split(' ')[0]}
+                                            </div>
+                                        )}
+                                        {/* Hover Overlay */}
+                                        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                                             <span className="bg-white/90 text-authority-navy px-6 py-2 rounded-full font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Project</span>
                                         </div>
-                                         <div className={`absolute inset-0 flex items-center justify-center font-heading text-6xl font-black uppercase tracking-tighter select-none ${
-                                             study.id === "smartstream" || study.id === "evergreen" || study.id === "siemens" || study.id === "siemens-config" || study.id === "iodine" ? "text-white/10" : "text-authority-navy/10"
-                                         }`}>
-                                             {study.client.split(' ')[0]}
-                                         </div>
                                     </Link>
                                 </div>
 

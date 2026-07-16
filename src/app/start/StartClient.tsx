@@ -57,7 +57,7 @@ export default function StartClient() {
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
                             <span className="text-xs font-bold uppercase tracking-wide text-authority-navy/70">
-                                Accepting partners for Q1 2026
+                                Accepting partners for Q3 2026
                             </span>
                         </div>
 

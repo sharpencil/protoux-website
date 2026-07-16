@@ -72,7 +72,7 @@ export default function Footer() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
-                            <span className="text-sm font-medium text-authority-navy leading-relaxed">Accepting New Partners for Q1 2026.</span>
+                            <span className="text-sm font-medium text-authority-navy leading-relaxed">Accepting New Partners for Q3 2026.</span>
                         </div>
                         <Link href="/start" className="inline-flex items-center text-sm font-bold text-authority-navy hover:text-electric-cyan transition-colors group pt-2">
                             Get Started <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
